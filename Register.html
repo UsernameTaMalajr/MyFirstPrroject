@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Login.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <title>Document</title>
     <script>
-        
-
+        $(document).ready(function() {
+        $("#basic-form").validate({
+        rules: {
+        name : {
+        required: true,
+        minlength: 3
+        },
+        surname: {
+        required: true,
+        min: 3
+        },
+        email: {
+        required: true,
+        email: true
+        },
+        number: {
+        required: true,
+        minlength: 8
+        },
+        }
+        })
+        });
     </script>
+    
 </head>
 <body>
     <div id="header">
@@ -24,11 +45,13 @@
     </div>
     <div id="Login">
         <div id="container">
-            <input type="text" class="boxes" id="name" placeholder="Insert name"><br>
-            <input type="text" class="boxes" id="surname" placeholder="Insert surname"><br>
-            <input type="number" class="boxes" id="number" placeholder="Insert Mobile number"><br>
-            <input type="email" class="boxes" id="email" placeholder="Insert Email"><br>
-            <button id="login">Login</button>
+            <form id="form" action="">
+                <input type="text" class="boxes" id="name" minlength="3" placeholder="Insert name" required><br>
+                <input type="text" class="boxes" id="surname" minlength="3" placeholder="Insert surname" required><br>
+                <input type="number" class="boxes" id="number" minlength="8" placeholder="Insert Mobile number" required><br>
+                <input type="email" class="boxes" id="email" placeholder="Insert Email" required><br>
+                <button id="login">Login</button>
+            </form>
         </div>
     </div>
     <div id="footer">

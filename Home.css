@@ -20,15 +20,18 @@ body{
 }
 .nav:hover{
     background-color: goldenrod;
-    color: black;
     border-radius: 12px;
 }
-
+#Games{
+    height: 80%;
+    width: 100%;
+    background-color: aliceblue;
+}
 #footer{
     height: 60px;
     width: 100%;
     background-color: black;
-    margin-top: 5%;
+    margin-top: 50%;
 }
 #copyright{
     float: left;
@@ -51,40 +54,4 @@ body{
     background-color: black;
     color: goldenrod;
 }
-/*everything below is for the About us form.*/
-#container{
-    width: 300px;
-    height: 350px;
-    background-color: black;
-    margin-top: 5%;
-    margin-left: 5%;
-    border-radius: 15px;
-}
-.boxes{
-    width: 230px;
-    height: 35px;
-    color: black;
-    margin-left: 30px;
-    margin-top:20px;
-    border-radius: 10px;
-    border-color: azure;
-}
-#login{
-    width: 230px;
-    height: 35px;
-    color: black;
-    margin-left: 35px;
-    margin-top:20px;
-    border-radius: 10px;
-}
-#login:hover{
-    background-color: gold;
-}
-h1{
-    color: white;
-    text-align: center;
-}
-p{
-    color: white;
-    text-align: center;
-}
+
