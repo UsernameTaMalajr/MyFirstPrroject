@@ -1,22 +1,22 @@
 #header{
-    height: 20%;
-    width: 100%;
+    overflow: hidden;
     background-color: rgb(0, 0, 0);
 }
 body{
     background-color: goldenrod;
 }
 #logo{
-    margin-left: 50%;
+    margin-left: 65%;
 }
 .nav{
-    float: left;
-    margin-left: 30px;
     margin-top: 15px;
+    margin-left: 15px;
     background-color: black;
-    color: white;
     border: none;
+    color: white;
     padding: 4px;
+    float: left;
+    display: block;
 }
 .nav:hover{
     background-color: goldenrod;
@@ -36,28 +36,13 @@ body{
     margin-left: 5px;
     color: white;
 }
-#facebook{
-    float: left;
-    margin-top: 2px;
-    margin-left: 63%;
-}
-#instagram{
-    float: left;
-    margin-top: 2px;
-    margin-left: 5pxs;
-}
-.button{
-    margin-left: 20px;
-    background-color: black;
-    color: goldenrod;
-}
 /*everything below is for the login form.*/
 #container{
     width: 300px;
     height: 350px;
     background-color: black;
     margin-top: 5%;
-    margin-left: 35%;
+    margin-left: 30%;
     border-radius: 15px;
 }
 .boxes{
@@ -79,4 +64,20 @@ body{
 }
 #login:hover{
     background-color: gold;
+}
+@media screen and (max-width:720px){
+    .nav{
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 1%;
+        margin-bottom: 3px;
+    }
+    #logo{
+        margin-left: auto;
+    }
+    #container{
+        margin-left: 20%;
+        height: 200px;
+    }
 }
