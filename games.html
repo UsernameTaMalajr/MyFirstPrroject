@@ -24,13 +24,15 @@
        function OnClickAboutus(){
             window.open("file:///C:/Users/Owner/Desktop/MCAST/Website%20Design/Home%20assignment/Home%20assignment/AboutUs.html")
        }
+       function OnClickHome(){
+            window.open("file:///C:/Users/Owner/Desktop/MCAST/Website%20Design/Home%20assignment/Home%20assignment/Home.html")
+       }
     </script>
 </head>
 <body>
     <div id="header">
         <img src="Images/Logo.png" height="50px" width="100px" id="logo">
-        <input type="button" class="nav" value="Home">
-        <input type="button" class="nav" value="Login/Register">
+        <button class="nav" onclick="OnClickHome()">Home</button>
         <input type="button" class="nav" value="Games">
         <button class="nav" onclick="OnClickAboutus()">About us</button>
         <button class="nav" onclick="OnClickContactus()">Contact us</button>
