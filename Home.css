@@ -90,6 +90,27 @@ img{
         margin-top: 300%;
     }
 }
+@media screen and (max-width:1024px){
+    .nav{
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 1%;
+        margin-bottom: 3px;
+    }
+    #logo{
+        margin-left: auto;
+    }
+    #Gallery{
+        margin-left: 150px;
+    }
+    .LoginRegister{
+        margin-left: 17%;
+    }
+    #footer{
+        margin-top: 100%;
+    }
+}
 
 
 

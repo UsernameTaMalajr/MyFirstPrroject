@@ -68,3 +68,25 @@ body{
         height: 1200px;
     }
 }
+@media screen and (max-width:1024px){
+    .nav{
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 1%;
+        margin-bottom: 3px;
+    }
+    #logo{
+        margin-left: auto;
+    }
+    .Games{
+        margin-left: 20px;
+        float: left;
+    }
+    .button{
+        margin-left: 2px;
+    }
+    #footer{
+        margin-top: 20%;
+    }
+}
